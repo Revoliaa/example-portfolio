@@ -1,0 +1,1289 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Segoe UI;
+    max-width: 100%;
+}
+/*-----SCROLLBAR-----*/
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #ccc8c8;
+    border-radius: 100vw;
+    margin-block: -5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #FC7A1E;
+    border-radius: 100vw;
+}
+/*-----SCROLLBAR-----*/
+/*-----NAVBAR-----*/
+.navbar {
+    display: inline-flex;
+    justify-content:space-evenly;
+    background-color: #E7E7E7;
+    width: 100vw;
+    height: 50px;
+}
+
+.navbar-logo {
+    max-height: 50px;
+    margin-right: 50vw;
+    color: black;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 35px;
+    transition: all 0.5s ease;
+}
+
+.navbar-logo:hover {
+    color: #FC7A1E
+}
+
+.navbar-item {
+    text-decoration: none;
+    display: inline-block;
+    color: black;
+    font-size: 22px;
+    padding-top: 10px;
+    transition: all 0.5s ease;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.navbar-item:hover {
+    color: #FC7A1E;
+}
+
+.burger-button {
+    display: none;
+    float: right;
+    padding: 14px 12.5px;
+}
+
+.burger-button button {
+    border: none;
+}
+
+.burger-button div {
+    width: 25px;
+    height: 3px;
+    border-radius: 10px;
+    background-color: black;
+    margin-top: 3px;
+}
+
+.burger-item,
+.burger-item-home {
+    display: none;
+    position: relative;
+    text-decoration: none;
+    font-size: 22px;
+    background-color: #E7E7E7;
+    color: black;
+    transition: all 0.5s ease;
+    text-align: center;
+}
+
+.burger-item:hover,
+.burger-item-home:hover {
+    color: #FC7A1E;
+}
+/*-----NAVBAR-----*/
+/*-----HOME-----*/
+.home {
+    width: 100vw;
+    height: 960px;
+    display: flex;
+}
+
+#particles-js {
+    z-index: -1;
+    overflow: hidden;
+    position: fixed;
+    width: 100vw;
+    height: 960px;
+}
+
+.introduction {
+    width: 1024px;
+    height: 480px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    background-color: #E7E7E7;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.home-pp {
+    width: 192px;
+    height: 192px;
+    border-radius: 192px;
+    margin-top: 25px;
+    border: 5px #FC7A1E solid
+}
+
+.introduction p {
+    font-size: 30px;
+    margin-top: 25px;
+}
+
+.introduction h1 {
+    font-size: 40px;
+    margin-top: 25px;
+}
+
+.typing-animation {
+    position: relative;
+    background-color: transparent;
+}
+
+.typing-animation::after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 53px;
+    border-right: 4px solid black;
+    animation: blink 1s infinite ease;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+/*-----HOME-----*/
+/*-----ABOUT-----*/
+.about {
+    min-width: 99vw;
+    height: 800px;
+    background-color: #F8F9FA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro {
+    display: inline-flex;
+    width: 1024px;
+    height: 640px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 10px 10px 50px black;
+}
+
+.biography {
+    width: 512px;
+    height: 640px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    text-align: center;
+}
+
+.biography h1 {
+    margin-top: 25px;
+}
+
+.biography p {
+    font-size: 20px;
+    line-height: 35px;
+}
+
+.skills {
+    width: 512px;
+    height: 640px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.html,
+.css,
+.js,
+.py,
+.cs {
+    margin-top: 60px;
+    margin-left: 16px;
+}
+
+.html-value,
+.css-value,
+.js-value,
+.py-value,
+.cs-value {
+    width: 480px;
+    height: 15px;
+    border-radius: 10px;
+    background-color: #E7E7E7;
+}
+
+.html h3 {
+    word-spacing: 380px;
+}
+
+.html-completed-value {
+    width: 432px;
+    height: 15px;
+    border-radius: 10px;
+    background-color: #FC7A1E;
+}
+
+.css h3 {
+    word-spacing: 400px;
+}
+
+.css-completed-value {
+    width: 240px;
+    height: 15px;
+    border-radius: 10px;
+    background-color: #FC7A1E;
+}
+
+.js h3 {
+    word-spacing: 415px;
+}
+
+.js-completed-value {
+    width: 312px;
+    height: 15px;
+    border-radius: 10px;
+    background-color: #FC7A1E;
+}
+
+.py h3 {
+    word-spacing: 370px;
+}
+
+.py-completed-value {
+    width: 192px;
+    height: 15px;
+    border-radius: 10px;
+    background-color: #FC7A1E;
+}
+
+.cs h3 {
+    word-spacing: 410px;
+}
+
+.cs-completed-value {
+    width: 120px;
+    height: 15px;
+    border-radius: 10px;
+    background-color: #FC7A1E;
+}
+/*-----ABOUT-----*/
+/*-----PROJECTS-----*/
+.projects {
+    width: 100vw;
+    height: 960px;
+    background-color: #F8F9FA;
+    display: flex;
+    justify-content: center;
+}
+
+.projects h1 {
+    display: inline-block;
+    justify-content: center;
+    margin-top: 0px;
+}
+
+.project-list {
+    position: absolute;
+    width: 1440px;
+    height: 800px;
+    border-radius: 20px;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 75px;
+    box-shadow: 10px 10px 50px black;
+}
+
+.project-1,
+.project-2,
+.project-3,
+.project-4 {
+    display: inline-flex;
+    height: 120px;
+    background-color: #E7E7E7;
+    margin: 25px;
+    border-radius: 20px;
+    justify-content: center;
+}
+
+.project-1 {
+    width: 420px;
+}
+
+.project-2 {
+    width: 480px;
+}
+
+.project-3 {
+    width: 420px;
+}
+
+.project-4 {
+    width: 420px;
+}
+
+.project-1,
+.project-2,
+.project-3,
+.project-4 {
+    margin-right: 0;
+}
+
+.project-1 a,
+.project-2 a,
+.project-3 a,
+.project-4 a {
+    margin: 0;
+    padding: 0;
+    color: black;
+    text-decoration: none;
+}
+
+.project-1 h2,
+.project-2 h2,
+.project-3 h2,
+.project-4 h2 {
+    margin-top: 20px;
+}
+
+.project-1 h3,
+.project-2 h3,
+.project-3 h3,
+.project-4 h3 {
+    padding-top: 20px;
+}
+
+.project-2 h2,
+.project-2 h3 {
+    margin-left: 10px;
+}
+/*-----PROJECTS-----*/
+/*-----CONTACT-----*/
+.contact {
+    width: 100vw;
+    height: 800px;
+    background-color: #696969;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-wrapper {
+    display: inline-flex;
+    width: 1060px;
+    height: 640px;
+    background-color: white;
+    box-shadow: 2px 2px 50px black;
+    justify-content: center;
+}
+
+.contact-form {
+    width: 530px;
+    height: 640px;
+    text-align: center;
+}
+
+.contact-form h1 {
+    margin-top: 50px;
+    float: left;
+    margin-left: 50px;
+}
+
+.form-name,
+.form-email,
+.form-topic,
+.form-message {
+    display: inline-flex;
+    flex-direction: column;
+    position: absolute;
+    float: left;
+    text-align: left;
+    font-size: 23px;
+    margin-left: -325px;
+}
+
+.form-name {
+    margin-top: 125px;
+}
+
+.form-email {
+    margin-top: 200px;
+}
+
+.form-topic {
+    margin-top: 275px;
+}
+
+.form-message {
+    margin-top: 350px;
+}
+
+.form-name input,
+.form-topic input,
+.form-email input {
+    width: 360px;
+    height: 25px;
+    border: 1px solid;
+    border-color: rgba(69, 69, 69, 0.4);
+}
+
+.form-message textarea {
+    width: 360px;
+    height: 120px;
+    border: 1px solid;
+    border-color: rgba(69, 69, 69, 0.4);
+    resize: none;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    font-size:18px;
+}
+
+.contact-form button {
+    position: absolute;
+    margin-top: 520px;
+    margin-left: -325px;
+    height: 48px;
+    width: 120px;
+    font-size: 25px;
+    background-color: #E7E7E7;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+}
+
+.contact-form button:hover {
+    background-color: #FC7A1E;
+    color: white;
+}
+
+.accounts {
+    width: 530px;
+    height: 640px;
+    text-align: center;
+}
+
+.accounts h1 {
+    margin-top: 50px;
+    float: left;
+    margin-left: 50px;
+    position: absolute;
+}
+
+.email-img {
+    margin-top: 120px;
+    float: left;
+    margin-left: 50px;
+}
+
+.email {
+    margin-top: 115px;
+    float: left;
+    margin-left: 20px;
+}
+
+.account-container {
+    width: 480px;
+    height: 240px;
+    margin-top: 170px;
+    margin-left: 50px;
+}
+
+.account-container img {
+    margin-top: 20px;
+}
+
+.github,
+.discord,
+.steam,
+.spotify,
+.youtube {
+    float: left;
+    margin-right: 20px;
+}
+/*-----CONTACT-----*/
+/*-----FOOTER-----*/
+.footer {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 50px;
+    background-color: #F8F9FA;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.footer h4 {
+    margin-right: 25px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #2F52E0;
+}
+/*-----FOOTER-----*/
+/*-----MEDIA-QUERIES-----*/
+@media screen and (max-width: 1480px) {
+    /*-----PROJECTS-----*/
+    .project-list {
+        width: 980px;
+    }
+    /*-----PROJECTS-----*/
+}
+
+@media screen and (max-width: 1440px) {
+    /*-----NAVBAR-----*/
+    .navbar-logo {
+        margin-right: 40vw;
+    }
+    /*-----NAVBAR-----*/
+    /*-----HOME-----*/
+    .introduction {
+        width: 800px;
+    }
+    /*-----HOME-----*/
+    /*-----ABOUT-----*/
+    .intro {
+        width: 900px;
+    }
+
+    .skills {
+        width: 450px;
+    }
+
+    .biography {
+        width: 450px;
+    }
+
+    .html,
+    .css,
+    .js,
+    .py,
+    .cs {
+        margin-left: 25px;
+    }
+
+    .html-value,
+    .css-value,
+    .js-value,
+    .py-value,
+    .cs-value {
+        width: 400px;
+    }
+
+    .html h3 {
+        word-spacing: 305px;
+    }
+
+    .html-completed-value {
+        width: 360px;
+    }
+
+    .css h3 {
+        word-spacing: 325px;
+    }
+
+    .css-completed-value {
+        width: 200px;
+    }
+
+    .js h3 {
+        word-spacing: 340px;
+    }
+
+    .js-completed-value {
+        width: 260px;
+    }
+
+    .py h3 {
+        word-spacing: 290px;
+    }
+
+    .py-completed-value {
+        width: 160px;
+    }
+
+    .cs h3 {
+        word-spacing: 330px;
+    }
+
+    .cs-completed-value {
+        width: 100px;
+    }
+    /*-----ABOUT-----*/
+    /*-----CONTACT-----*/
+    .form-wrapper {
+        width: 800px;
+    }
+
+    .contact-form,
+    .accounts {
+        width: 400px;
+    }
+    
+    .form-name,
+    .form-email,
+    .form-topic,
+    .form-message {
+        margin-left: -265px;
+    }
+
+    .form-name input,
+    .form-topic input,
+    .form-email input {
+        width: 240px;
+    }
+
+    .form-message textarea {
+        width: 340px;
+    }
+
+    .contact-form button {
+        margin-left: -265px;
+    }
+    /*-----CONTACT-----*/
+}
+
+@media screen and (max-width: 1024px) {
+    /*-----NAVBAR-----*/
+    .navbar-logo {
+        margin-right: 30vw;
+    }
+    /*-----NAVBAR-----*/
+    /*-----HOME-----*/
+    .introduction {
+        width: 700px;
+    }
+    /*-----HOME-----*/
+    /*-----ABOUT-----*/
+    .intro {
+        width: 800px;
+    }
+    
+    .biography p {
+        font-size: 18px;
+    }
+
+    .skills {
+        width: 400px;
+    }
+
+    .biography {
+        width: 400px;
+    }
+
+    .html,
+    .cs,
+    .js
+    .py,
+    .cs {
+        margin-left: 25px;
+    }
+
+    .html-value,
+    .css-value,
+    .js-value,
+    .py-value,
+    .cs-value {
+        width: 350px;
+    }
+
+    .html h3 {
+        word-spacing: 255px;
+    }
+
+    .html-completed-value {
+        width: 315px;
+    }
+
+    .css h3 {
+        word-spacing: 275px;
+    }
+
+    .css-completed-value {
+        width: 175px;
+    }
+
+    .js h3 {
+        word-spacing: 290px;
+    }
+
+    .js-completed-value {
+        width: 227,5px;
+    }
+
+    .py h3 {
+        word-spacing: 245px;
+    }
+
+    .py-completed-value {
+        width: 140px;
+    }
+
+    .cs h3 {
+        word-spacing: 285px;
+    }
+
+    .cs-completed-value {
+        width: 87.5px;
+    }
+    /*-----ABOUT-----*/
+    /*-----PROJECTS-----*/
+    .project-list {
+        width: 600px;
+    }
+    
+    .project-1,
+    .project-2,
+    .project-3,
+    .project-4 {
+        width: 550px;
+        text-align: center;
+    }
+
+    .project-2 h2,
+    .project-2 h3 {
+        margin-left: 0;
+    }
+    /*-----PROJECTS-----*/
+    /*-----CONTACT-----*/
+    .form-wrapper {
+        width: 700px;
+    }
+
+    .contact-form,
+    .accounts {
+        width: 350px;
+    }
+    
+    .form-name,
+    .form-email,
+    .form-topic,
+    .form-message {
+        margin-left: -235px;
+    }
+
+    .form-name input,
+    .form-topic input,
+    .form-email input {
+        width: 270px;
+    }
+
+    .form-message textarea {
+        width: 270px;
+    }
+
+    .contact-form button {
+        margin-left: -150px;
+    }
+    /*-----CONTACT-----*/
+}
+
+@media screen and (max-width: 850px) {
+    /*-----ABOUT-----*/
+    .about {
+        height: 1100px;
+    }
+
+    .intro {
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 500px;
+        height: 1000px;
+    }
+
+    .html {
+        margin-top: 0;
+    }
+    /*-----ABOUT-----*/
+}
+
+@media screen and (max-width: 800px) {
+    /*-----NAVBAR-----*/
+    .navbar-logo {
+        margin-right: 15vw;
+    }
+    /*-----NAVBAR-----*/
+    /*-----HOME-----*/
+    .introduction {
+        width: 600px;
+    }
+    /*-----HOME-----*/
+    /*-----CONTACT-----*/
+    .contact {
+        height: 960px;
+    }
+
+    .form-wrapper {
+        width: 600px;
+        height: 900px;
+        flex-direction: column;
+    }
+
+    .contact-form {
+        width: 600px;
+        height: 570px;
+    }
+
+    .accounts {
+        width: 600px;
+        height: 320px;
+    }
+
+    .account-container {
+        height: 155px;
+    }
+
+    .form-name,
+    .form-email,
+    .form-topic,
+    .form-message {
+        margin-left: -360px;
+    }
+    
+    .form-name input,
+    .form-topic input,
+    .form-email input,
+    .form-message textarea {
+        width: 360px;
+    }
+    
+    .contact-form button {
+        margin-left: -360px;
+    }
+    /*-----CONTACT-----*/
+}
+
+@media screen and (max-width: 700px) {
+    /*-----NAVBAR-----*/
+    .navbar-logo {
+        margin-right: 10vw;
+    }
+    /*-----NAVBAR-----*/
+    /*-----HOME-----*/
+    .introduction {
+        width: 500px;
+    }
+    
+    .introduction p {
+        font-size: 20px;
+    }
+    
+    .introduction h1 {
+        font-size: 25px;
+    }  
+        
+    .typing-animation::after {
+        height: 35px;
+    }        
+    /*-----HOME-----*/
+}
+
+@media screen and (max-width: 650px) {
+    /*-----PROJECTS-----*/
+    .project-list {
+        width: 500px;
+    }
+
+    .project-1,
+    .project-2,
+    .project-3,
+    .project-4 {
+        width: 450px;
+    }
+    /*-----PROJECTS-----*/
+    /*-----CONTACT-----*/
+    .form-wrapper {
+        width: 380px;
+        height: 900px;
+        flex-direction: column;
+    }
+
+    .contact-form,
+    .accounts {
+        width: 380px;
+    }
+
+    .account-container {
+        width: 320px;
+    }
+
+    .form-name,
+    .form-email,
+    .form-topic,
+    .form-message {
+        margin-left: -260px;
+    }
+    
+    .form-name input,
+    .form-topic input,
+    .form-email input,
+    .form-message textarea {
+        width: 240px;
+    }
+    
+    .contact-form button {
+        margin-left: -260px;
+    }
+    /*-----CONTACT-----*/
+}
+
+@media screen and (max-width: 600px) {
+    /*-----NAVBAR-----*/
+    .navbar {
+        display: block;
+    }
+    
+    .navbar-logo {
+        margin-right: 0;
+        margin-left: 20px;
+        float: left;
+    }
+    
+    .navbar-item {
+        display: none;
+    }
+    
+    .burger-button {
+        display: block;
+    }
+    
+    .burger-item,
+    .burger-item-home {
+        display: none;
+        flex-direction: column;
+        padding: 10px;
+    }
+    
+    .burger-item-home {
+        margin-top: 8px;
+    }
+    /*-----NAVBAR-----*/
+    /*-----HOME-----*/
+    .introduction {
+        width: 400px;
+    }
+    /*-----HOME-----*/
+}
+
+@media screen and (max-width: 550px) {
+    /*-----ABOUT-----*/
+    .intro {
+        width: 400px;
+    }
+
+    .biography p {
+        font-size: 16.5px;
+    }
+
+    .biography h1 {
+        font-size: 30px;
+    }
+    /*-----ABOUT-----*/
+    /*-----PROJECTS-----*/
+    .project-list {
+        width: 400px;
+    }
+
+    .project-1,
+    .project-2,
+    .project-3,
+    .project-4 {
+        width: 350px;
+        margin: 0;
+        margin-top: 25px;
+        margin-left: 25px;
+    }
+
+    .project-1 h3,
+    .project-2 h3,
+    .project-3 h3,
+    .project-4 h3 {
+        font-size: 16.5px;
+    }
+    /*-----PROJECTS-----*/
+}
+
+@media screen and (max-width: 450px) {
+    /*-----ABOUT-----*/
+    .intro {
+        width: 350px;
+    }
+
+    .biography h1 {
+        font-size: 25px;
+    }
+
+    .html,
+    .css,
+    .js,
+    .py,
+    .cs {
+        margin-top: 25px;
+    }
+
+    .html-value,
+    .css-value,
+    .js-value,
+    .py-value,
+    .cs-value {
+        width: 300px;
+    }
+
+    .html-completed-value {
+        width: 270px;
+    }
+
+    .css-completed-value {
+        width: 150px;
+    }
+
+    .js-completed-value {
+        width: 195px;
+    }
+
+    .py-completed-value {
+        width: 120px;
+    }
+
+    .cs-completed-value {
+        width: 75px;
+    }
+    /*-----ABOUT-----*/
+}
+
+@media screen and (max-width: 425px) {
+    /*-----HOME-----*/
+    .introduction {
+        width: 350px;
+    }
+    
+    .home-pp {
+        width: 160px;
+        height: 160px;
+        border-radius: 160px;
+    }
+    /*-----HOME-----*/
+    /*-----PROJECTS-----*/
+    .project-list {
+        width: 360px;
+    }
+
+    .project-1,
+    .project-2,
+    .project-3,
+    .project-4 {
+        margin: 0;
+        margin-top: 25px;
+        margin-left: 10px;
+    }
+
+    .project-1 h2,
+    .project-2 h2,
+    .project-3 h2,
+    .project-4 h2 {
+        font-size: 24px;
+    }
+
+    .project-1 h3,
+    .project-2 h3,
+    .project-3 h3,
+    .project-4 h3 {
+        font-size: 15px;
+    }   
+    
+    .project-1,
+    .project-2,
+    .project-3,
+    .project-4 {
+        width: 340px;
+    }
+    /*-----PROJECTS-----*/ 
+    /*-----CONTACT-----*/
+    .form-wrapper {
+        width: 300px;
+        height: 900px;
+        flex-direction: column;
+    }
+
+    .contact-form,
+    .accounts {
+        width: 300px;
+    }
+
+    .account-container {
+        margin: 0;
+        margin-top: 150px;
+        width: 300px;
+        height: 155px;
+    }
+
+    .contact-form h1 {
+        margin-left: 15px;
+    }
+
+    .form-name,
+    .form-email,
+    .form-topic,
+    .form-message {
+        margin-left: -230px;
+    }
+
+    .form-name input,
+    .form-email input,
+    .form-topic input,
+    .form-message textarea {
+        width: 270px;
+    }
+    
+    .contact-form button {
+        margin-left: -230px;
+    }
+
+    .accounts h1 {
+        margin-left: 15px;
+    }
+
+    .accounts img {
+        margin-left: 18px;
+    }
+    /*-----CONTACT-----*/    
+}
+
+@media screen and (max-width: 400px) {
+    /*-----HOME-----*/
+    .introduction h1 {
+        font-size: 22px;
+    }
+
+    .typing-animation::after {
+        height: 30px;
+    }
+    /*-----HOME-----*/
+    /*-----ABOUT-----*/
+    .intro {
+        width: 300px;
+    }
+
+    .biography h1 {
+        font-size: 25px;
+    }
+
+    .html,
+    .css,
+    .js,
+    .py,
+    .cs {
+        margin-top: 15px;
+    }
+
+    .html-value,
+    .css-value,
+    .js-value,
+    .py-value,
+    .cs-value {
+        width: 250px;
+    }
+
+    .html-completed-value {
+        width: 225px;
+    }
+
+    .css-completed-value {
+        width: 125px;
+    }
+
+    .js-completed-value {
+        width: 162.5px;
+    }
+
+    .py-completed-value {
+        width: 100px;
+    }
+
+    .cs-completed-value {
+        width: 62.5px;
+    }
+    /*-----ABOUT-----*/   
+}
+
+@media screen and (max-width: 375px) {
+    /*-----HOME-----*/
+    .introduction {
+        width: 300px;
+    }
+
+    .home-pp {
+        width: 128px;
+        height: 128px;
+        border-radius: 128px;
+    }
+    /*-----HOME-----*/
+    /*-----PROJECTS-----*/
+    .project-list {
+        width: 310px;
+    }
+
+    .project-1,
+    .project-2,
+    .project-3,
+    .project-4 {
+        margin: 0;
+        margin-top: 25px;
+        margin-left: 10px;
+    }
+
+    .project-1 h2,
+    .project-2 h2,
+    .project-3 h2,
+    .project-4 h2 {
+        font-size: 22px;
+    }
+
+    .project-1 h3,
+    .project-2 h3,
+    .project-3 h3,
+    .project-4 h3 {
+        font-size: 14px;
+    }   
+    
+    .project-1,
+    .project-2,
+    .project-3,
+    .project-4 {
+        width: 290px;
+    }
+    /*-----PROJECTS-----*/
+}
+
+@media screen and (max-width: 350px) {
+    /*-----HOME-----*/
+    .introduction h1 {
+        font-size: 20px;
+    }
+
+    .typing-animation::after {
+        height: 28px;
+    }
+    /*-----HOME-----*/  
+}
+/*-----MEDIA-QUERIES-----*/
