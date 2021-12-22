@@ -312,7 +312,8 @@
 .project-1,
 .project-2,
 .project-3,
-.project-4 {
+.project-4,
+.project-5 {
     display: inline-flex;
     height: 120px;
     background-color: #E7E7E7;
@@ -321,7 +322,9 @@
     justify-content: center;
 }
 
-.project-1 {
+.project-1,
+.project-3,
+.project-4 {
     width: 420px;
 }
 
@@ -329,25 +332,23 @@
     width: 480px;
 }
 
-.project-3 {
-    width: 420px;
-}
-
-.project-4 {
-    width: 420px;
+.project-5 {
+    width: 240px;
 }
 
 .project-1,
 .project-2,
 .project-3,
-.project-4 {
+.project-4,
+.project-5 {
     margin-right: 0;
 }
 
 .project-1 a,
 .project-2 a,
 .project-3 a,
-.project-4 a {
+.project-4 a,
+.project-5 a {
     margin: 0;
     padding: 0;
     color: black;
@@ -357,14 +358,16 @@
 .project-1 h2,
 .project-2 h2,
 .project-3 h2,
-.project-4 h2 {
+.project-4 h2,
+.project-5 h2 {
     margin-top: 20px;
 }
 
 .project-1 h3,
 .project-2 h3,
 .project-3 h3,
-.project-4 h3 {
+.project-4 h3,
+.project-5 h3 {
     padding-top: 20px;
 }
 
@@ -749,12 +752,14 @@ textarea {
     /*-----PROJECTS-----*/
     .project-list {
         width: 600px;
+        height: 850px;
     }
     
     .project-1,
     .project-2,
     .project-3,
-    .project-4 {
+    .project-4,
+    .project-5 {
         width: 550px;
         text-align: center;
     }
@@ -907,7 +912,8 @@ textarea {
     .project-1,
     .project-2,
     .project-3,
-    .project-4 {
+    .project-4,
+    .project-5 {
         width: 450px;
     }
     /*-----PROJECTS-----*/
@@ -1007,7 +1013,8 @@ textarea {
     .project-1,
     .project-2,
     .project-3,
-    .project-4 {
+    .project-4,
+    .project-5 {
         width: 350px;
         margin: 0;
         margin-top: 25px;
@@ -1017,7 +1024,8 @@ textarea {
     .project-1 h3,
     .project-2 h3,
     .project-3 h3,
-    .project-4 h3 {
+    .project-4 h3,
+    .project-5 h3 {
         font-size: 16.5px;
     }
     /*-----PROJECTS-----*/
@@ -1091,7 +1099,8 @@ textarea {
     .project-1,
     .project-2,
     .project-3,
-    .project-4 {
+    .project-4,
+    .project-5 {
         margin: 0;
         margin-top: 25px;
         margin-left: 10px;
@@ -1100,21 +1109,24 @@ textarea {
     .project-1 h2,
     .project-2 h2,
     .project-3 h2,
-    .project-4 h2 {
+    .project-4 h2,
+    .project-5 h2 {
         font-size: 24px;
     }
 
     .project-1 h3,
     .project-2 h3,
     .project-3 h3,
-    .project-4 h3 {
+    .project-4 h3,
+    .project-5 h3 {
         font-size: 15px;
     }   
     
     .project-1,
     .project-2,
     .project-3,
-    .project-4 {
+    .project-4,
+    .project-5 {
         width: 340px;
     }
     /*-----PROJECTS-----*/ 
@@ -1246,7 +1258,8 @@ textarea {
     .project-1,
     .project-2,
     .project-3,
-    .project-4 {
+    .project-4,
+    .project-5 {
         margin: 0;
         margin-top: 25px;
         margin-left: 10px;
@@ -1255,21 +1268,24 @@ textarea {
     .project-1 h2,
     .project-2 h2,
     .project-3 h2,
-    .project-4 h2 {
+    .project-4 h2,
+    .project-5 h2 {
         font-size: 22px;
     }
 
     .project-1 h3,
     .project-2 h3,
     .project-3 h3,
-    .project-4 h3 {
+    .project-4 h3,
+    .project-5 h3 {
         font-size: 14px;
     }   
     
     .project-1,
     .project-2,
     .project-3,
-    .project-4 {
+    .project-4,
+    .project-5 {
         width: 290px;
     }
     /*-----PROJECTS-----*/
