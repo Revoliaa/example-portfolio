@@ -1,4 +1,5 @@
 # Revolia.tk
-My personal website source code.
+Simple portfolio website
 
-You can do whatever you want with this website under MIT license.
+# License
+This website under MIT license.
