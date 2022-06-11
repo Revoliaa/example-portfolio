@@ -1,5 +1,4 @@
-# Revolia.tk
-Simple portfolio website
+# Simple portfolio website
 
 # License
 This website under MIT license.
